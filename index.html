@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Finder</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- 🔹 Header + Search Section -->
+      <header class="top-section">
+        <div class="header-container">
+          <h1 class="heading">
+            <i class="fa-solid fa-utensils"></i> Recipe Finder
+          </h1>
+        </div>
+
+        <div class="description-container">
+          <p>Find delicious recipes from around the world</p>
+          <p>
+            Data from
+            <a
+              class="mealdb-link"
+              href="https://www.themealdb.com/"
+              target="_blank"
+            >
+              TheMealDB
+            </a>
+            🧑‍🍳
+          </p>
+        </div>
+
+        <div class="input-container">
+          <input
+            type="text"
+            id="search-input"
+            autocomplete="off"
+            placeholder="Search for a recipe..."
+          />
+          <button class="search-btn">Search</button>
+        </div>
+      </header>
+
+      <!-- 🔹 Error Message -->
+      <section class="error-container">
+        <p class="error-message"></p>
+      </section>
+
+      <!-- 🔹 Search Query Display -->
+      <section class="search-query-container">
+        <p class="search-query"></p>
+      </section>
+
+      <!-- 🔹 Meals Grid -->
+      <section class="meal-display-container"></section>
+
+      <!-- 🔹 Recipe Details -->
+      <section class="recipe-instructions-container"></section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
